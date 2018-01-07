@@ -10,10 +10,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     public void clickFunction(View view) {
-        Toast.makeText(this, "Hello there!", Toast.LENGTH_SHORT).show();
 
         EditText myTextField = (EditText) findViewById(R.id.myTextField); // convert View to EditText
         Log.i("Info", myTextField.getText().toString());
+
+        Toast.makeText(this, myTextField.getText().toString(), Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
