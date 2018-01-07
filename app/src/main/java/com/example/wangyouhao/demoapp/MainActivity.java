@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     public void clickFunction(View view) {
+        Toast.makeText(this, "Hello there!", Toast.LENGTH_SHORT).show();
 
         EditText myTextField = (EditText) findViewById(R.id.myTextField); // convert View to EditText
         Log.i("Info", myTextField.getText().toString());
