@@ -29,4 +29,14 @@
         android:onClick="clickFunction"
         android:text="Button" />
 
+    <EditText
+        android:id="@+id/myTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
 </RelativeLayout>
